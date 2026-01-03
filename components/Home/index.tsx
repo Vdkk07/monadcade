@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/dialog";
 import RetroCoinFlipGame from "@/components/ui/games/retro_coinflip_game";
 import RetroPlinkoGame from "../ui/games/retro_plinko_game";
 import RetroMinesGame from "@/components/ui/games/retro_mines_game";
+import RetroDiceGame from "../ui/games/retro_dice_game";
 
 export function Demo() {
   return (
@@ -137,44 +138,44 @@ export function Demo() {
             </Dialog>
           </div>
 
-          {/* Mines Game */}
-          {/* <div className="bg-zinc-900 border-4 border-green-500 shadow-[6px_6px_0px_0px_rgba(34,197,94,0.4)] p-4">
+          {/* Dice Game */}
+          <div className="bg-zinc-900 border-4 border-cyan-400 shadow-[6px_6px_0px_0px_rgba(34,211,238,0.4)] p-4">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-16 h-16 bg-green-500 border-2 border-black shadow-[2px_2px_0px_0px_#000] flex items-center justify-center">
-                <span className="text-3xl">💎</span>
+              <div className="w-16 h-16 bg-cyan-400 border-2 border-black shadow-[2px_2px_0px_0px_#000] flex items-center justify-center">
+                <span className="text-3xl">🎲</span>
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-lg font-black text-green-500 tracking-wide">
-                    MINES
+                  <h3 className="text-lg font-black text-cyan-400 tracking-wide">
+                    DICE ROLL
                   </h3>
-                  <div className="bg-red-500 border-2 border-black px-2 py-1 text-white">
+                  <div className="bg-green-500 border-2 border-black px-2 py-1 text-white">
                     <span className="text-xs font-black tracking-tighter">
-                      DANGER!
+                      98X WIN
                     </span>
                   </div>
                 </div>
                 <p className="text-xs font-black text-gray-400 uppercase mb-2">
-                  Avoid Bombs, Find Gems
+                  High Precision Probability
                 </p>
               </div>
             </div>
             <Dialog>
               <DialogTrigger asChild>
-                <button className="w-full h-12 bg-green-600 border-2 border-black shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all font-black text-white text-lg tracking-widest">
-                  ▶ ENTER MINES ◀
+                <button className="w-full h-12 bg-cyan-500 border-2 border-black shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all font-black text-white text-lg tracking-widest">
+                  ▶ ROLL THE DICE ◀
                 </button>
               </DialogTrigger>
               <DialogContent className="max-w-[100vw] max-h-[100vh] w-full h-full bg-black border-4 border-yellow-400 p-0 m-0 overflow-hidden">
                 <div className="h-full overflow-y-auto bg-black text-white">
                   <div className="p-4 bg-yellow-400 text-black font-black flex justify-between items-center">
-                    <span>MINES LIVE</span>
+                    <span>DICE LIVE</span>
                   </div>
-                  <RetroMinesGame />
+                  <RetroDiceGame />
                 </div>
               </DialogContent>
             </Dialog>
-          </div> */}
+          </div>
 
           {/* Mines Game */}
           <div className="bg-zinc-900 border-4 border-green-500 shadow-[6px_6px_0px_0px_rgba(34,197,94,0.4)] p-4">
